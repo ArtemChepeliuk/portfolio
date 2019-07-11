@@ -6,17 +6,17 @@
 	color: #666
 
 ::selection
-	background-color: $accent
 	color: red
 
 body
 	font-size: 16px
-	min-width: 320px
+	min-width: 320px 
 	position: relative
 	line-height: 1.65
 	font-family: "Roboto", sans-serif
 	overflow-x: hidden
 	color: $text
+	background-color: $black
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -40,4 +40,25 @@ b, strong
 
 
 
+header
+	.bg-light
+		background-color: $yellow !important
+		.navbar-nav
+			text-align: center
+		.nav-link, .navbar-brand
+			color: $black
+			&:hover
+				color: lighten($black, 40)
+
+.sec_1
+	margin-top: 65px
+	height: 50vh
+	background-image: url(../img/_src/i.png)
+	background-position: center center
+	background-repeat: no-repeat
+	.tittle_wrapper
+		.teg
+			color: #7c7c7c
+		.teg_name
+			color: #4799d3
 @import "media" // Always at the end
